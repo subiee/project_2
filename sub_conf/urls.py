@@ -23,7 +23,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bookmark/', include('bookmark.urls')),
-    path('blog/', incluse('blog.url')),
+    path('blog/', include('blog.urls')),
 
     # class-based views 
     # path('bookmark/', BookmarkLV.as_view(), name='index'),

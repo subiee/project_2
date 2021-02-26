@@ -30,6 +30,10 @@ class PostMAV(MonthArchiveView):
     model = Post
     date_field = 'modify_dt'
 
+class PostDAV(DayArchiveView):
+    model = Post
+    date_field = 'modify_dt'
+
 class PostTAV(TodayArchiveView):
     model = Post
     date_field = 'modify_dt'
