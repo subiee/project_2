@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
+    'photo.apps.PhotoConfig',
     'sub_conf',
     'taggit.apps.TaggitAppConfig',
     'taggit_templatetags2',
@@ -130,7 +132,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '_media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TAGGIT_CASE_INSENSITIVE = True
 TAGGIT_LIMIT = 50
