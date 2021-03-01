@@ -33,4 +33,6 @@ urlpatterns = [
 
     # Example: /blog/tag/tagname/
     path('tag/<str:tag>/', views.TaggedObjectLV.as_view(), name='tagged_object_list'),
+
+
 ]
