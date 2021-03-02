@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'widget_tweaks',
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
     'photo.apps.PhotoConfig',
@@ -139,3 +139,6 @@ TAGGIT_LIMIT = 50
 
 DISQUS_SHORTNAME = 'pydjango-web-programming'
 DISQUS_MY_DOMAIN = 'http://192.168.56.101:8000'
+
+#LoGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'

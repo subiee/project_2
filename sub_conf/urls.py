@@ -18,6 +18,7 @@ from django.urls import path, include
 from sub_conf.views import HomeView
 from django.conf.urls.static import static
 from django.conf import settings
+from sub_conf.views import UserCreatView, UserCreateDoneTV
 # from django.views.generic import ListView, DetailView    blog앱 추가되면서 삭제해야되는 부분
 # from bookmark.models import Bookmark                     
 
@@ -25,6 +26,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/register/', UserCreatView.as_view(), name='register'),
+    path('accounts/register/done/', UserCreateDoneTV.as_view(), name='register_done'),
+
     path('', HomeView.as_view(), name='home'),
     path('bookmark/', include('bookmark.urls')),
     path('blog/', include('blog.urls')),
