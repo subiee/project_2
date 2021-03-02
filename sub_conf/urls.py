@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from sub_conf.views import HomeView
-from django.conf.urls.static import staticfrom
+from django.conf.urls.static import static
 from django.conf import settings
 # from django.views.generic import ListView, DetailView    blog앱 추가되면서 삭제해야되는 부분
 # from bookmark.models import Bookmark                     
