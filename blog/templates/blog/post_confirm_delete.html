@@ -1,0 +1,10 @@
+{% extends "base.html" %} 
+{% block title %}post_confirm_delete.html{% endblock %} 
+
+{% block content %}
+Post Delete
+
+{% csrf_token %}
+Are you sure you want to delete "{{ object }}" ?
+
+{% endblock %}
